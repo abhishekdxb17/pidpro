@@ -45,6 +45,26 @@ void *Process(void *a){
     pthread_exit(NULL);
 }
 
+//------------------------------------------------------------------------------------------------------------------
+//function to allocate the process
+int allocation(void){
+    int start,f=1;
+    for(start=0; start<most-base; start++){
+        if(proc[start]==0)
+         {
+            proc[start]=1;
+            f=0;
+            break;
+        }
+    }
+    return f?-1:start;
+   
+}
+
+
+//------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
