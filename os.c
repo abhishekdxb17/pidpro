@@ -22,10 +22,10 @@ void *Process(void *a){
        int iden = Allocate_Pid();
       
        if(1!=0){
-       printf("Process Id is [%d] and the thread Id is [%d]\n",iden+Min_Pid,id1_t ,1);
-        sleep(1);
+       printf("Process Id is [%d] and the thread Id is [%d]\n",iden+Min_Pid,id1_t );
+        sleep(10);
 
-        printf("Process Id is [%d] and the thread Id is [%d] and freed after %d seconds\n",iden+Min_Pid,id1_t ,1);
+        printf("Process Id is [%d] and the thread Id is [%d] and freed after %d seconds\n",iden+Min_Pid,id1_t ,10);
         release(iden);
     }
     else
