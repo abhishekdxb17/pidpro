@@ -75,5 +75,7 @@ printf("Thank u for entering the number of threads\n");
     	 pthread_join(pcs[obj],NULL);
     	 
     	 }
-       
-}
+		 
+		 printf("Thank u for using my program**\n now exiting \n");
+		 
+		 }
